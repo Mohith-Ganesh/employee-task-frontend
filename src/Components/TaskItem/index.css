@@ -1,0 +1,104 @@
+/*.task-item {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+button {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+h1 {
+  color: #0d4056;
+}
+
+h2 {
+  color: #e5cedc;
+}
+*/ /*
+.task-item {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.task-item h2 {
+  color: #e5cedc;
+  text-shadow: 1px 1px #0d4056;
+}
+
+.task-item p {
+  color: #0d4056;
+}
+
+button {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+h1 {
+  color: #ffffff;
+  text-shadow: 2px 2px #0d4056;
+}
+
+h2 {
+  color: #e5cedc;
+  text-shadow: 1px 1px #0d4056;
+}
+*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.task-item {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.task-item h2 {
+  color: #ffffff;
+  text-shadow: 1px 1px #000000;
+}
+
+.task-item p {
+  color: #ffffff;
+}
+
+button {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button.start {
+  background-color: #28a745;
+}
+
+button.stop {
+  background-color: #dc3545;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+h1 {
+  color: #ffffff;
+  text-shadow: 2px 2px #0d4056;
+}
+
+h2 {
+  color: #e5cedc;
+  text-shadow: 1px 1px #0d4056;
+}

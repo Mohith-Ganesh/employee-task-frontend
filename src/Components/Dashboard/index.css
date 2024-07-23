@@ -1,0 +1,267 @@
+/*.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.task-item {
+  background-color: #92cec4;
+  border: 1px solid #0d4056;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.task-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  background-color: #c65b92;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #736e93;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.App {
+  animation: fadeIn 1s ease-in-out;
+}
+*/ /*
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #0d4056;
+}
+
+.task-item {
+  background: linear-gradient(145deg, #92cec4, #736e93);
+  border: 2px solid #0d4056;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  width: 250px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.task-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.task-item h2 {
+  color: #e5cedc;
+  text-shadow: 1px 1px #0d4056;
+}
+
+.task-item p {
+  color: #0d4056;
+}
+
+button {
+  background-color: #e5cedc;
+  border: none;
+  border-radius: 10px;
+  color: #0d4056;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #c65b92;
+  color: #ffffff;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.App {
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .task-item {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+*/
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #0d4056;
+}
+
+.task-item {
+  background: linear-gradient(145deg, #92cec4, #736e93);
+  border: 2px solid #0d4056;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  width: 250px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.task-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.task-item h2 {
+  color: #ffffff;
+  text-shadow: 1px 1px #000000;
+}
+
+.task-item p {
+  color: #ffffff;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button.start {
+  background-color: #28a745;
+}
+
+button.stop {
+  background-color: #dc3545;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.App {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .task-item {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
