@@ -28,6 +28,7 @@ const TaskItem = ({ task }) => {
       >
         {isStarted ? "Stop" : "Start"}
       </button>
+      <button style={{backgroundColor: '#03fcca', marginLeft: '5px'}}>Submit</button>
       {elapsedTime > 0 && <p>Time Spent: {elapsedTime} seconds</p>}
     </div>
   );
